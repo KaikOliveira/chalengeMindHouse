@@ -5,7 +5,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { AntDesign, Fontisto } from '@expo/vector-icons';
 
-import ButtonBasket from './components/ButtonBasket/fdsa';
+import PageMaintenance from './components/PageMaintenance/index';
+
+import ButtonBasket from './components/ButtonBasket';
 
 function HomeScreen() {
   return (
@@ -18,21 +20,6 @@ function HomeScreen() {
       }}
     >
       <Text>Home!</Text>
-    </View>
-  );
-}
-
-function SettingsScreen() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#c58080',
-      }}
-    >
-      <Text>Settings!</Text>
     </View>
   );
 }
@@ -95,14 +82,14 @@ export default function Router() {
         />
         <Tab.Screen
           name="Search"
-          component={SettingsScreen}
+          component={PageMaintenance}
           options={{
             title: 'Pesquisa',
           }}
         />
         <Tab.Screen
           name="Basket"
-          component={HomeScreen}
+          component={PageMaintenance}
           options={{
             title: '',
           }}
@@ -110,14 +97,14 @@ export default function Router() {
 
         <Tab.Screen
           name="Requests"
-          component={SettingsScreen}
+          component={PageMaintenance}
           options={{
             title: 'Pedidos',
           }}
         />
         <Tab.Screen
           name="Profile"
-          component={HomeScreen}
+          component={PageMaintenance}
           options={{
             title: 'Perfil',
           }}
