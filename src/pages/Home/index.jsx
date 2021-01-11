@@ -33,7 +33,7 @@ import {
   CategoryImage,
 } from './styles';
 
-export default function HomePage() {
+export default function HomePage({ navigation }) {
   const adImages = [
     'https://placeimg.com/640/640/nature',
     'https://placeimg.com/640/640/people',
@@ -174,7 +174,10 @@ export default function HomePage() {
                 return <View style={[styles.item, styles.itemEmpty]} />;
               }
               return (
-                <TouchableOpacity style={styles.item}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Details')}
+                  style={styles.item}
+                >
                   <CategoryImage source={{ uri: item.img }} />
                   <Text style={styles.text}>{item.name}</Text>
                 </TouchableOpacity>

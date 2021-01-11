@@ -35,13 +35,13 @@ export default function Router() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Basket"
+        initialRouteName="Home"
         screenOptions={({ route, navigation }) => ({
           tabBarIcon: ({ color, size, focused }) => {
-            if (route.name === 'Basket') {
+            if (route.name === 'Details') {
               return (
                 <ButtonBasket
-                  onPress={() => navigation.navigate('Basket')}
+                  onPress={() => navigation.navigate('Details')}
                   focused={focused}
                 />
               );
@@ -74,7 +74,7 @@ export default function Router() {
           }}
         />
         <Tab.Screen
-          name="Basket"
+          name="Details"
           component={DetailsCategory}
           options={{
             title: '',
