@@ -64,7 +64,8 @@ export const AddressText = styled.Text`
 `;
 
 export const AdContainer = styled.View`
-  height: 150px;
+  margin-top: 15px;
+  height: 250px;
 `;
 
 export const CustonSlideView = styled.View`
@@ -75,13 +76,13 @@ export const CustonSlideView = styled.View`
 
 export const AdImage = styled.Image`
   width: 90%;
-  height: 150px;
+  height: 250px;
 `;
 
 export const AdButtonContainer = styled.View`
   z-index: 1;
-  height: 30px;
-  margin-top: -60px;
+  height: 5px;
+  margin-top: -20px;
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
@@ -100,7 +101,7 @@ export const AdSelectButton = styled.TouchableOpacity`
 `;
 
 export const CategoryConteiner = styled.View`
-  margin-top: 35px;
+  margin-top: 20px;
 `;
 
 export const TitleAndSeeAll = styled.View`
@@ -111,8 +112,33 @@ export const TitleAndSeeAll = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 22px;
+  color: #444;
+  font-size: 24px;
   font-weight: bold;
 `;
 
-export const SeeAll = styled.Text``;
+export const SeeAllButton = styled.TouchableOpacity``;
+
+export const SeeAll = styled.Text`
+  color: #a4a4a4;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-top: 6px;
+  font-weight: 700;
+`;
+
+export const CategoryItems = styled.View``;
+
+export const Category = styled.TouchableOpacity`
+  align-items: center;
+  flex-grow: 1;
+  margin: 4px;
+  padding: 20px;
+`;
+
+export const CategoryImage = styled.Image`
+  width: 150px;
+  height: 110px;
+  margin-top: -10px;
+  border-radius: 15px;
+`;
