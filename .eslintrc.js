@@ -27,6 +27,7 @@ module.exports = {
     'react/prop-types': ['off'],
     'eslint import/no-unresolved': ['off'],
     'no-use-before-define': 'off',
+    'react/no-array-index-key': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {

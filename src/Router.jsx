@@ -1,28 +1,13 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { AntDesign, Fontisto } from '@expo/vector-icons';
 
 import PageMaintenance from './components/PageMaintenance/index';
-
 import ButtonBasket from './components/ButtonBasket';
 
-function HomeScreen() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#EFEFEF',
-      }}
-    >
-      <Text>Home!</Text>
-    </View>
-  );
-}
+import HomePage from './pages/Home/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -75,7 +60,7 @@ export default function Router() {
       >
         <Tab.Screen
           name="Home"
-          component={HomeScreen}
+          component={HomePage}
           options={{
             title: 'Inicio',
           }}
