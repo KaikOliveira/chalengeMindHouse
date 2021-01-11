@@ -17,12 +17,12 @@ import {
   ButtonLeftText,
 } from './styles';
 
-export default function DetailsCategory() {
+export default function DetailsCategory({ navigation }) {
   return (
     <Wrapper>
       <Header>
         <HeaderImg source={headerimg} />
-        <ButtonBack>
+        <ButtonBack onPress={() => navigation.navigate('Home')}>
           <Ionicons name="chevron-back-outline" size={40} color="#000" />
         </ButtonBack>
         <Box />
