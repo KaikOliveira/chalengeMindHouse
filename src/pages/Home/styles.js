@@ -90,7 +90,7 @@ export const AdButtonContainer = styled.View`
 `;
 
 export const AdSelectButton = styled.TouchableOpacity`
-  background: coral;
+  background: #f4a03b;
   margin: 3px;
   width: 20px;
   height: 20px;

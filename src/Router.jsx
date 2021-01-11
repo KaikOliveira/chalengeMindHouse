@@ -8,6 +8,7 @@ import PageMaintenance from './components/PageMaintenance/index';
 import ButtonBasket from './components/ButtonBasket';
 
 import HomePage from './pages/Home/index';
+import DetailsCategory from './pages/DetailsCategory/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,7 +35,7 @@ export default function Router() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Home"
+        initialRouteName="Basket"
         screenOptions={({ route, navigation }) => ({
           tabBarIcon: ({ color, size, focused }) => {
             if (route.name === 'Basket') {
@@ -74,7 +75,7 @@ export default function Router() {
         />
         <Tab.Screen
           name="Basket"
-          component={PageMaintenance}
+          component={DetailsCategory}
           options={{
             title: '',
           }}

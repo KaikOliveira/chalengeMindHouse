@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { SimpleLineIcons, FontAwesome, FontAwesome5 } from '@expo/vector-icons';
-
 import ImageSlider from 'react-native-image-slider';
 
 import {
@@ -237,18 +236,3 @@ const styles = StyleSheet.create({
     color: '#333333',
   },
 });
-
-/*
-<Category>
-      <CategoryImage source={{ uri: item.img }} />
-      <CategoryTypeText>{item.name}</CategoryTypeText>
-    </Category>
-
-
-  {Categorys.map(item => (
-            <Category key={item.id}>
-              <CategoryImage source={{ uri: item.img }} />
-              <CategoryTypeText>{item.name}</CategoryTypeText>
-            </Category>
-          ))}
-*/
